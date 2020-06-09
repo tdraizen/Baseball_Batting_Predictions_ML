@@ -16,4 +16,15 @@
   
 ![batters](/images/Image_Stack_14.png)
   
-<p> We opted for utilizing a multi-output machine learning classification model.  This allows our network to predict a set of class labels for each head, making it possible to learn asymetric label combinations.  Again, the dual outputs in the machine learning would output 1 = classification(Top, Middle, Bottom) and output 2 = batting average.  
+<p> We opted for utilizing a multi-output machine learning classification model with two hidden layers.  This allows our network to predict a set of class labels for each head, making it possible to learn asymetric label combinations.  Again, the dual outputs in the machine learning would output 1 = tier class(Top, Middle, Bottom) and output 2 = batting average.  
+  
+![model](/images/multi_ouptut_ml.png)
+
+## _Model Evaluation_
+<p> Utilizing the multi-output machine learning we compiled the model using loss category = "sparse_categorical_crossentropy", and "mean_squared_error" with an adam optimize and loss_weights = 0.5 to 0.5 measuring accuracy as our metric.  To fit the model we used a train/test splits with X_train and the two output y/Y trains where
+  vector y = Batting Average and vector Y = "Tier".  
+
+* 1. The Dual Output Classifier accuracy equated to 67% vs. naive prediction of 33%. 
+* 2. No obvious signs of overfitting. 
+* 3. Multi-output model helps accuracy
+
