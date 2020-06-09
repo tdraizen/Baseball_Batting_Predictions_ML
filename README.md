@@ -28,3 +28,23 @@
 * 2. No obvious signs of overfitting. 
 * 3. Multi-output model helps accuracy
 
+## _Import and Code_
+
+![imports](/images/imports.png)
+![code](/images/code_1.png)
+
+
+## _Applications/Libraries Used For Project_
+<p> The following Libraries were used for this project
+* Math - Calculate Angles Based on YOLO coordinates
+* Numpy - Used in concert with Pandas for array conversion
+* Scikit learn - Train Test Splitting
+* Py Charm - Image Processing with Python
+* Keras/Tensorflow - Mult-output Modeling
+* LabelIMG - YOLO coordinates for angle dissemination (CNN Neural Network)
+* cvlib - open source / object detection and manipulation
+
+![applications](/images/applications_used.png)
+
+## _Final Thoughts For Future Development_
+<p> While we are delighted with the results that provided a 67% accuracy for the machine learning model, we feel that integrating video analysis and additional player profiles will help increase the overall accuracy of the project.   The idea would be to train the object detection model to monitor muti-angles from when the batter first steps up to the plate until the swing culminates.  We would ideally use a weighted angle of time function to determine the data sets to be used.  
