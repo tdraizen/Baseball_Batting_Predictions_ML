@@ -12,7 +12,8 @@
 ![angle1](/images/object_detect.png).    ![angle2](/images/object_angle.png)
 
 ## _Model Summary_
-<p> The difference between a .250 hitter and a .300(all-star) is 1 hit per week, given on average a batter would have 500 at bats in a season that is approximately six months long.  In our analysis, the difference between the top 50 greatesthitters vs the bottom 50 greatest hitters of all-time is about 1.2 hits / week ranging from the very best Ty Cobb(.3663) to Mike Marshall(.2702).  The complexity of this project is understanding the sublte differences between angles given the fact that many batting stances display a wide range of variance as you can see below from a small sample.
+<p> The difference between a .250 hitter and a .300(all-star) is 1 hit per week, given on average a batter would have 500 at bats in a season that is approximately six months long.  In our analysis, the difference between the top 50 greatesthitters vs the bottom 50 greatest hitters of all-time is about 1.2 hits / week ranging from the very best Ty Cobb(.3663) to Mike Marshall(.2702).  The complexity of this project is understanding the sublte differences between angles given the fact that many batting stances display a wide range of variance as you can see below from a small sample of 14 MLB batters from the universe of 1000.  
   
 ![batters](/images/Image_Stack_14.png)
   
+<p> We opted for utilizing a multi-output machine learning classification model.  This allows our network to predict a set of class labels for each head, making it possible to learn asymetric label combinations.  Again, the dual outputs in the machine learning would output 1 = classification(Top, Middle, Bottom) and output 2 = batting average.  
