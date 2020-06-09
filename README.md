@@ -14,5 +14,5 @@
 ## _Model Summary_
 <p> The difference between a .250 hitter and a .300(all-star) is 1 hit per week, given on average a batter would have 500 at bats in a season that is approximately six months long.  In our analysis, the difference between the top 50 greatesthitters vs the bottom 50 greatest hitters of all-time is about 1.2 hits / week ranging from the very best Ty Cobb(.3663) to Mike Marshall(.2702).  The complexity of this project is understanding the sublte differences between angles given the fact that many batting stances display a wide range of variance as you can see below from a small sample.
   
-![batters](/images/Image_Stack_12.png)
+![batters](/images/Image_Stack_14.png)
   
